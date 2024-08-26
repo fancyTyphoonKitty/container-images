@@ -25,8 +25,8 @@ RUN microdnf -y update && \
     krb5-workstation \
     ansible-core \
     tofu
-RUN mkdir /pgvt-labnet-gha-iac
-WORKDIR /pgvt-labnet-gha-iac
+RUN mkdir /code
+WORKDIR /code
 RUN python3 -m pip install --upgrade \
     pip
 ADD ./requirements.txt /code/requirements.txt
